@@ -106,6 +106,7 @@ body {
     margin-right: -30%;
     padding: 5% 7.5% 0% 4%;
 }
+
 .moving-service-cont__body {
     
     
@@ -276,7 +277,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-left: auto;
-    
+    padding-left: 10px;
     margin-right: auto;
 }
 .conatcts-info__item {
