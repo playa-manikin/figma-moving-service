@@ -9,6 +9,7 @@
 </head>
 <body>
     <header class="about-us">
+        <button class="theme-switcher" onclick="toggleDarkTheme()">Switch Theme</button>
         <img src="images/logo.svg" class="logo">
         <div class="moving-service">
             <div class="moving-service__body">
@@ -136,6 +137,17 @@
     
     </section>
     <footer class="footer">
+        
+        <script>
+            function toggleDarkTheme() {
+            const body = document.querySelector('body');
+            body.classList.toggle('dark-theme');
+            const allTags = body.getElementsByTagName('*');
+            for (let i = 0; i < allTags.length; i++) {
+                allTags[i].classList.toggle('dark-theme');
+                }
+            }
+        </script>
     </footer>
 </body>
 </html>
