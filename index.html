@@ -9,6 +9,18 @@
     <title>Round Rock Moving Services</title>
 </head>
 <body>
+    <dialog id="contact-us-modal">
+        <h1 class="contact-us__title">Contact Us</h1>
+        <form class="conatcts-form">
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name" class="conatcts-form__input" required>
+            <br>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" class="conatcts-form__input" required>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Email" class="conatcts-form__input" required>
+            <br>
+            <input type="submit" value="Submit" class="conatcts-form__submit"> <button>Close</button>
+            </form>        
+    </dialog>
     <header class="about-us">
         <button class="theme-switcher" onclick="toggleDarkTheme()">Switch Theme</button>
         <img src="images/logo.svg" class="logo">
@@ -24,9 +36,9 @@
                     <a href="#" class="button-row__services-button button-row__services-button_white">
                         What the services
                     </a>
-                    <a href="#" class="button-row__help-buton button-row__help-buton_yellow">
+                    <button onclick="showContactUsWindow()" class="button-row__help-buton button-row__help-buton_yellow">
                         I Need Help
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -44,9 +56,9 @@
                     <a href="#" class="button-row__services-button">
                         What the services
                     </a>
-                    <a href="#" class="button-row__help-buton">
+                    <button onclick="showContactUsWindow()" class="button-row__help-buton">
                         I Need Help
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -67,9 +79,9 @@
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
                 <div class="button-row">
-                    <a href="#" class="button-row__help-buton">
+                    <button onclick="showContactUsWindow()" class="button-row__help-buton">
                         I Need Help
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -101,28 +113,15 @@
         </div>
         <div class="button-row button-row_center">
             
-            <a href="#" class="button-row__help-buton button-row__help-buton_round">
+            <button onclick="showContactUsWindow()" class="button-row__help-buton button-row__help-buton_round">
                 I Need Help
-            </a>
+            </button>
         </div>
     </section>
     <section class="contact-us">
         <h1 class="contact-us__title">Contact Us</h1>
         <div class="conatcts">
             
-            <form class="conatcts-form">
-            <label for="fullname">Full Name:</label><br>
-            <input type="text" id="fullname" name="fullname" placeholder="John Smith" class="conatcts-form__input" required>
-            <br>
-            <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="phone" placeholder="8 800 555 3535" class="conatcts-form__input" required>
-            <br>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" placeholder="example@mail.com" class="conatcts-form__input" required>
-            <br>
-            <input type="submit" value="Submit" class="conatcts-form__submit">
-            </form>
-        
         <div class="conatcts-info">
             <span class="conatcts-info__item">
                 <img src="images/mail.webp" class="conatcts-info__icon">test@gmail.com

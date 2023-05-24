@@ -1,3 +1,13 @@
+function showContactUsWindow() {
+  const contactUsModal = document.getElementById('contact-us-modal');
+  contactUsModal.showModal()
+}
+
+
+
+
+
+
 function toggleDarkTheme() {
     const body = document.querySelector('body');
     body.classList.toggle('dark-theme');
@@ -6,3 +16,4 @@ function toggleDarkTheme() {
         allTags[i].classList.toggle('dark-theme');
         }
     }
+

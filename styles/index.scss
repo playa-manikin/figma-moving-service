@@ -3,6 +3,9 @@ body {
     margin: 0%;
     font-family: Poppins;
 }
+input:focus{
+    outline: 0 none;
+}
 .about-us {
     background-image: url(../images/bg1.webp);
     background-repeat: no-repeat;
@@ -10,9 +13,6 @@ body {
     background-position: center;
     display: flex;
     flex-direction: column;
-    &.dark-theme {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/bg1.webp);
-    }
 }
 .logo {
     display: block;
@@ -69,12 +69,17 @@ body {
         font-size: 14px;
         line-height: 118.5%;
         color: #FFFFFF;
+        border: 0px;
+        outline:none;
         &_round {
             border-radius: 30px;
         }
         &_yellow {
             background: #EFD063;
             color: #333333;
+        }
+        &:hover {
+            cursor: pointer;
         }
     }
     &__services-button {
@@ -99,7 +104,7 @@ body {
     gap: 160px;
     padding-bottom: 45px;
     &.dark-theme {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/bg2.webp);
+        background-image: url(../images/bg2.webp), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) ;
     }
 }
 .moving-service-cont {
@@ -238,9 +243,6 @@ body {
     &__image {
         display: block;
         width: 100%;
-        &.dark-theme {
-            filter: brightness(0.8);
-        }
     }
     &__title {
         color: #294283;
@@ -298,14 +300,19 @@ body {
     margin: auto;
     padding: 15px;
     &__input {
-        border: solid 3px #4D6BB9;
-        background-color: #FFFFFF;
+        border: none;
+        background-color: #9FB1DE;
+        color: #FFFFFF;
         border-radius: 61px;
         margin-bottom: 14px;
-        
+        font-size: 27px;
+        padding: 5px 15px;
     }
     &__submit {
-        background-color: #FFFFFF;
+        font-size: 34px;
+        font-weight: 700;
+        color: #FFFFFF;
+        background-color: #4D6BB9;
         border: 3px solid #4D6BB9;
         width: 160px;
         height: 55px;
@@ -353,6 +360,10 @@ body {
     &::after {
         content: " To Dark";
     }
+}
+#contact-us-modal {
+    border: 3px solid #294283;
+    border-radius: 32px;
 }
 @media screen and (max-width: 1430px) {
     .about-us {
