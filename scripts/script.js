@@ -1,7 +1,10 @@
-function showContactUsWindow() {
-  const contactUsModal = document.getElementById('contact-us-modal');
-  contactUsModal.showModal()
-}
+const helpButton = document.getElementsByClassName('button-row__help-buton');
+const contactDialog = document.getElementById('contact-us-modal');
+const contactDialogClose = document.getElementsByClassName('close-modal');
+
+helpButton.onclick = function() {
+    contactDialog.showModal();
+};
 
 
 
