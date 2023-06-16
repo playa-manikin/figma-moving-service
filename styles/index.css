@@ -365,6 +365,9 @@ input:focus {
   display: inline-block;
   font-size: 16px;
 }
+.theme-switcher:hover {
+  cursor: pointer;
+}
 .theme-switcher.dark-theme {
   color: #333333;
   background-color: #9b9b9b;
@@ -379,6 +382,25 @@ input:focus {
 #contact-us-modal {
   border: 3px solid #294283;
   border-radius: 32px;
+}
+#contact-us-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#close-modal {
+  border-radius: 30px;
+  background: #4D6BB9;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 118.5%;
+  color: #FFFFFF;
+  border: 0px;
+  outline: none;
+}
+#close-modal:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1430px) {
