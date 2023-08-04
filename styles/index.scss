@@ -243,6 +243,10 @@ input:focus{
     &__image {
         display: block;
         width: 100%;
+        &:hover{
+            scale: 105%;
+            cursor: pointer;
+        }
     }
     &__title {
         color: #294283;
@@ -371,7 +375,7 @@ input:focus{
         background-color: rgba(0, 0, 0, 0.6)
     }
 }
-#close-modal{
+#close-modal {
     border-radius: 30px;
     background: #4D6BB9;
     padding: 10px 12px;
@@ -386,7 +390,60 @@ input:focus{
         cursor: pointer;
     }
 }
-
+.lightbox {
+    //display: none;
+    //position: fixed;
+    //z-index: 1;
+    //padding-top: 100px;
+    //left: 0;
+    //top: 0;
+    //width: 100%;
+    //height: 100%;
+    //overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 0px;
+    outline:none;
+    background-color: rgba(0, 0, 0, 0.0);
+    &__container {
+        display: flex;
+    }
+    &::backdrop {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    &__close-button{
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 10px;
+        margin-bottom: auto;
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+    &__prev-button{
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 10px;
+        align-self: center;
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+    &__next-button{
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 10px;
+        align-self: center;
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+}
 @media screen and (max-width: 1430px) {
     .about-us {
         justify-content: start;

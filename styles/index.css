@@ -254,6 +254,10 @@ input:focus {
   display: block;
   width: 100%;
 }
+.services-list__image:hover {
+  scale: 105%;
+  cursor: pointer;
+}
 .services-list__title {
   color: #294283;
   font-weight: 900;
@@ -401,6 +405,52 @@ input:focus {
 }
 #close-modal:hover {
   cursor: pointer;
+}
+
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 0px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.lightbox__container {
+  display: flex;
+}
+.lightbox::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.lightbox__close-button {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px;
+  margin-bottom: auto;
+}
+.lightbox__close-button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.lightbox__prev-button {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px;
+  align-self: center;
+}
+.lightbox__prev-button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.lightbox__next-button {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px;
+  align-self: center;
+}
+.lightbox__next-button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 1430px) {
